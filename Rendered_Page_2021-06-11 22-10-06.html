@@ -81,17 +81,21 @@
         </style>
     <form action="/" method="GET">
       <div>
-        <label>Name</label>
-        <input maxlength="10" type="text">
+        <label>Username</label>
+        <input type="text">
       </div>
       <div>
-        <label>Gender</label>
-        <input name="Gender" type="radio" value="male">
-        <label>Male</label>
-        <input name="Gender" type="radio" value="female">
-        <label>Female</label>
+        <label>Password</label>
+        <input type="password">
       </div>
-      <input class="button" type="submit" value="Submit">
+      <div>
+        <label>UserType</label>
+        <select>
+          <option value="guest">Guest</option>
+          <option value="admin">Admin</option>
+        </select>
+      </div>
+      <input class="button" type="submit" value="Login">
     </form>
   </head>
   <body></body>
